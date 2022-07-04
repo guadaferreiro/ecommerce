@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: black;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.envio {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.envio p {
+    width: auto;
+    height: 30px;
+    font-size: 13px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+#navegation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    background-size: cover;
+    padding: 10px;
+}
+
+#navegation a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #f7f1ee;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+#navegation a:hover {
+    color: #e0c2ae;
+}
+
+#marca {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80px;
+}
+/* FIN HEADER */
+
+/* MAIN */
+
+.imgIndex {
+    height: 500px;
+    width: 500px;
+}
+
+.containeR {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+    justify-items: center;
+}
+
+.containeR img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 600px;
+}
+
+.containeR .btn1 {
+    position: absolute;
+    top: 50%;
+    right: 64%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.347);
+    color: #111;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.containeR .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 74.5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:rgba(255, 255, 255, 0.347);
+    color: #111;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.containeR .btn1:hover {
+    background-color: rgba(0, 0, 0, 0.218);
+}
+
+.containeR .btn2:hover {
+    background-color: rgba(0, 0, 0, 0.218);
+}
+
+.info {
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.info h2{
+    font-style: italic;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#emailHelp {
+    font-size: 10px;
+}
+
+.info .btn {
+    background-color: rgba(250, 155, 218, 0);
+    color: rgb(195, 106, 255);
+    font-size: 16px;
+    border-color: rgb(226, 182, 255);
+    border-radius: 9px;
+    border-width: 1.5px;
+}
+
+.iconos{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+
+.fav img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+/* FIN MAIN */
+
+
+
+/* FOOTER */
+h3 {
+    color: #606060;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer{
+    color: #606060;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(234, 211, 255, 0.322);
+    width: 100%;
+    height: 210px;
+}
+
+.footer p{
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #606060;
+}
+
+.column{
+    width: auto;
+}
+
+#navegacion {
+    display: flex;
+}
+
+#navegacion a {
+    display: inline-block;
+    text-align: center;
+    text-decoration:underline;
+    text-decoration-color: #c3c2c2;
+    color: #606060;
+    font-size: 16px;
+}
+
+#navegacion a:hover {
+    color: #e0c2ae;
+}
+
+.cards {
+    width: 160px;
+    height: 45px;
+}
+
+
+/* FIN FOOTER */
