@@ -125,6 +125,7 @@ h2{
     color: #000000;
     border-radius: 10px;
     padding: 5px;
+    margin-top: 10px;
 }
 
 .button-index:hover {
@@ -147,4 +148,23 @@ hr{
 
 #position {
     margin-right: 45px;
+    margin-bottom: 45px;
+}
+
+footer a {
+    color: #000000;
+}
+
+.margin {
+    margin-bottom: 100px;
+}
+
+.card-border {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+    transform: scale(1.05);
 }
