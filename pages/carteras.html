@@ -20,12 +20,12 @@
 <body>
     <header>
         <div class="envio">
-            <p> Envio gratis a partir de los $7000</p>
+            <p> <i class="bi bi-truck"></i> Envio gratis a partir de los $7000 </p>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong" id="navegation">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto ">
@@ -45,6 +45,13 @@
                     <ul class="navbar-nav">
                         <a class="navbar-brand d-sm-none d-md-block " href="../index.html"> <h1 class="h1">VENECIA</h1> </a>
                     </ul>
+
+                    <ul class="nav justify-content-end">
+                        <a type="button" href="" class="nav-link btn btn-light bg-transparent position-relative me-3 p-0">
+                            <i class="bi bi-cart2 nav-shop"></i> 
+                            <span class="position-absolute badge border border-dark border-1 bg-white top-0 start-100 translate-middle badge rounded-circle bg-dark p-1" > 0 </span> 
+                        </a>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -53,135 +60,137 @@
 
     <main>
         <p class="ms-5">Filtros</p>
-        <div class="margin row row-cols-1 row-cols-md-2 g-4 text-center me-5 ms-5 mt-5">
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/1.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt=""/>
-                    <div class="card-body">
-                        <h5 class="card-title">VENECIA</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+        <div id="contenedor-productos">
+            <div class="margin row row-cols-1 row-cols-md-2 g-4 text-center me-5 ms-5 mt-5">
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/1.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt=""/>
+                        <div class="card-body">
+                            <h5 class="card-title">VENECIA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/2.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">ROMA</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/2.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ROMA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/3.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">MILAN</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/3.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">MILAN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/4.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">FLORENCIA</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/4.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">FLORENCIA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/5.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">NAPOLES</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/5.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">NAPOLES</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/6.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">VERONA</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/6.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">VERONA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/7.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">GENOVA</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/7.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">GENOVA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/8.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">POSITANO</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/8.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">POSITANO</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/9.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">TURIN</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/9.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">TURIN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/10.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">PALERMO</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/10.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">PALERMO</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card card-border">
-                    <img src="../img/carteras/11.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">BARI</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card card-border">
+                        <img src="../img/carteras/11.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">BARI</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                <div class="card-border card">
-                    <img src="../img/carteras/slide/fav1.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">LUCCA</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <div class="card-border card">
+                        <img src="../img/carteras/slide/fav1.jpg" class="card-img-top w-100 shadow-1-strong rounded mb-4" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">LUCCA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

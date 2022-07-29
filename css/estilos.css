@@ -38,9 +38,22 @@ body {
     color: #FFFFFF;
 }
 
+.envio i {
+    margin-right: 10px;
+}
+
 .h1 {
     color: #9f4a00;
     font-size: 50px;
+}
+
+.nav-button {
+    background-color: #9f4a005b;
+
+}
+
+.nav-shop {
+    font-size: 30px;
 }
 
 #navegation a {
@@ -167,4 +180,8 @@ footer a {
 
 .card-border:hover {
     transform: scale(1.05);
+}
+
+.badge {
+    color: #9f4a00;
 }
