@@ -48,24 +48,24 @@
                     </ul>
 
                     <ul class="nav justify-content-end">
-                        <a type="button" href="" id="btn-carrito" class="nav-link btn btn-light bg-transparent position-relative me-3 p-0">
+                        <a type="button" href="" class="btn-carrito nav-link me-3 p-0"> 
                             <i class="bi bi-cart2 nav-shop"></i> 
-                            <span class="position-absolute badge border border-dark border-1 bg-white top-0 start-100 translate-middle badge rounded-circle" > 0 </span> 
                         </a>
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <section class="modal modal-show">
+            <div class="modal-container">
+                <h2 class="titulo-modal">Tu carrito</h2>
+            </div>
+            <a href="" class="modal-cerrar">Cerrar</a>
+            <a href="" class="modal-btn">Continuar compra</a>
+        </section>
     </header>
 
     <main>
-        <select id="filtroColor" class="ms-5">
-            <option value="">Todos</option>
-            <option value="">Negro</option>
-            <option value="">Marron</option>
-            <option value="">Verde</option>
-        </select>
         <div id="productos" class="lentes margin row row-cols-1 row-cols-md-2 g-4 text-center me-5 ms-5 mt-5"> </div>
     </main>
 
@@ -130,6 +130,6 @@
 
     </footer>    
 
-    <script src="../js/stock.js"></script>
+    <script src="../js/stock.js" async></script>
 </body>
 </html>

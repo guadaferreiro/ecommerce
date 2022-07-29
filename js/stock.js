@@ -28,14 +28,14 @@ let productosCarteras = [
     {id: 24, nombre:"Lucca", precio: 4000, color: "Azul"},
 ];
 
-const botonCarrito = document.querySelectorAll ('#button');
+const openModal = document.querySelector('.btn-carrito');
+const modal = document.querySelector ('.modal');
+const cerrarModal = document.querySelector ('.modal-cerrar');
 
 const productos = document.getElementById("productos");
 
-let carrito = []
-
-let gridProductos = () => {
-    return (productos.innerHTML = productosLentes.map ((item)=>{
+function gridProductos (){
+    productos.innerHTML = productosLentes.map ((item)=>{
         return ` 
             <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                 <div class="card card-border">
@@ -43,52 +43,22 @@ let gridProductos = () => {
                     <div class="card-body">
                         <h5 class="card-title">${item.nombre}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">$ ${item.precio}</h6>
-                        <a href="#" id="button" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
+                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-bag"></i></a>
                     </div>
                 </div>
             </div>  
         `
-    }).join(""));
-
+    }).join("");
 };
 gridProductos();
 
-/*
-botonCarrito.forEach (btn => {
-    btn.addEventListener('click', agregarAlCarrito)
+
+openModal.addEventListener ('click', (e) =>{
+    e.preventDefault();
+    modal.classList.add('modal-show');
 });
 
-
-function agregarAlCarrito (e) {
-    const boton = e.target;
-    const item = boton.closest('.card');
-    const itemTitulo = item.querySelector ('.card-title').textContent;
-    const itemPrecio = item.querySelector ('.card-subtitle').textContent;
-    const itemImg = item.querySelector ('.card-img-top').src;
-
-    const nuevoCarrito = {
-    titulo: itemTitulo,
-    precio: itemPrecio,
-    imagen: itemImg,
-    cantidad: 1
-    };
-
-    agregarAlCarrito(nuevoCarrito);
-}
-
-function agregarAlCarrito (nuevoCarrito) {
-    carrito.push(nuevoCarrito);
-}
-
-console.log(carrito);
-*/
-
-
-
-
-
-
-
-
-
-
+cerrarModal.addEventListener ('click', (e) =>{
+    e.preventDefault();
+    modal.classList.remove('modal-show');
+});
