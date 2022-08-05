@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    min-height: 100vh;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+
+/* NAVBAR */
+.hover:hover{
+    background: transparent;
+}
+
+#button-x{
+    outline: none;
+    box-shadow: none;
+}
+
+#button-line{
+    outline: none;
+    box-shadow: none;
+    border: 1.5px solid #9f4a0066;
+}
+
+.offcanvas{
+    background-color: #ffffffcb;
+}
+
+.hover-item{
+    font-size: 22px;
+    color: #000000;
+}
+
+.hover-item:hover{
+    font-weight: bold;
+    color: #9f4a00;
+}
+
+.boton-carrito {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    padding: 5px;
+    position: absolute;
+    transition: all .3s;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+}
+
+.conteo-carrito {
+    font-size: 14px;
+    background-color: #9f4a00;
+    color: #edeef6;
+    position: relative;
+    top:-30px;
+    right: -3px;
+    padding: 0px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.boton-carrito:hover {
+    cursor: pointer;
+    color: #9f4a00;
+}
+.boton-carrito:focus {
+    outline: none;
+}
+
+.envio {
+    background-color: black;
+    color: #edeef6;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 12px;
+}
+/* FIN NAVBAR */
+
+/* HEADER */
+.header{
+    width: 100%;
+    background-image: url("../img/headcopia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+h1 {
+    color: #9f4a00;
+    font-size: 50px;
+}
+/* FIN HEADER */
+
+/* SECTION INDEX */
+
+.iconos{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+h2{
+    font-style: italic;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.fav img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 80px;
+}
+/* FIN SECTION INDEX */
+
+/*INDEX*/
+.button-shop {
+    border-color: #000000;
+    color: #000000;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+/*FORMULARIO-CONTACTO*/
+.button {
+    background-color: rgba(250, 155, 218, 0);
+    color: #9f4a00;
+    font-size: 16px;
+    border-color: #9f4a00;
+    border-radius: 9px;
+    border-width: 1.5px;
+}
+
+.button:focus:not(:focus-visible) {
+    background-color: #fcf1df;
+    color: #9f4a00b4;
+    box-shadow:0 1px 1px rgba(255, 241, 232, 0.5)inset, 0 0 8px rgba(255, 239, 227, 0.6);
+    outline: 0 none;
+}
+
+.form-control:focus{
+    border-color: #9f4a00;
+    box-shadow:0 1px 1px rgba(255, 241, 232, 0.5)inset, 0 0 8px rgba(255, 239, 227, 0.6);
+    outline: 0 none;
+}
+/*FIN FORMULARIO-CONTACTO*/
+
+
+/* FOOTER*/
+.icon {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.cards {
+    width: 180px;
+    height: 45px;
+}
+
+hr{
+    color: #9f4a0091;
+}
+
+footer a {
+    color: #9f4a0091;
+}
+
+footer a:hover {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.banner {
+    background-color: black;
+    color: #edeef6;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner i {
+    margin: 10px;
+}
+
+.card-border {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+    transform: scale(1.05);
+}
+/* FIN FOOTER*/
+
+/* CONTENEDOR CARTAS JS*/
+#contenedor-productos{
+    margin-top:  40px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-border {
+    border: solid 2px #fdfcfc;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-transition: all ease-out 0.2s;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    border-color:rgba(212, 139, 108, 0.478);;
+}
+
+.producto-card{
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    border: 1.5px solid #1e212315 ;
+    border-radius: 10px;
+}
+
+.card-img{
+    width: 275px;
+    height: 275px;
+    border-radius: 10px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items:center;
+}
+
+.card-title{
+    font-size: 25px;
+}
+
+/* BOTON CARTA  */
+.boton-agregar {
+    background: rgba(0,0,0,0);
+    border:transparent;
+    color: #212529;
+    font-size: 30px;
+}
+
+.boton-agregar:hover {
+    cursor: pointer;
+    color: rgb(212, 139, 108);
+}
+
+.boton-agregar:focus {
+    outline: none;
+}
+
+
+/* MODAL - CARRITO  */
+.boton-vaciar {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(212, 139, 108);
+}
+.boton-vaciar:hover {
+    background-color: rgb(212, 139, 108);
+    color: white;
+}
+
+.img-modal {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.productoEnCarrito {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.productoEnCarrito:hover {
+    border-left: 2px solid  rgb(212, 139, 108);
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: rgb(255, 155, 155);
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+
+.bi-x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+.bi-x:hover {
+    cursor: pointer;
+}
+.bi-x:focus {
+    outline: none;
+}
+
+.modal-carrito h3 {
+    color:rgb(212, 139, 108);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.carrito-price {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+
+.carrito-total-productos{
+    margin-left: 460px;
+}
+
+/* TOASTIFY */
+.toastify{
+    font-size: 18px;
+    padding: 10px;
+    background: white;
+    border: 2px solid #9f4a00;
+    color:#9f4a00;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.button-filtro {
+    display: block;
+    margin-bottom: 5px;
+    background-color: white;
+    border: none;
+    width: 70px;
+    height: 30px;
+    font-size: 15px; 
+    color: rgb(199, 133, 46);   
+    cursor: pointer;
+    text-align: left;
+    text-decoration:underline
+}
+
+.filtro{
+    margin: 20px;
+    font-size: 20px;
+}

@@ -1,0 +1,28 @@
+const catalogoLentes = [
+    {id: 1, nombre:"Berlin", precio: 4000 , color: "marron", imagen: "img/lentes11.jpg", stock:1, categoria:"lentes"},
+    {id: 2, nombre:"Buenos Aires", precio: 4250, color: "negro", imagen: "img/lentes1.jpg", stock:1, categoria:"lentes"},
+    {id: 3, nombre:"Viena", precio: 4500, color: "marron", imagen: "img/lentes2.jpg", stock:1, categoria:"lentes"},
+    {id: 4, nombre:"Copenhague", precio:3000, color:"negro", imagen: "img/lentes3.jpg", stock:1, categoria:"lentes"},
+    {id: 5, nombre:"Londres", precio:3250, color:"marron", imagen: "img/lentes4.jpg", stock:1, categoria:"lentes"},
+    {id: 6, nombre:"Moscu", precio:3500, color:"blanco", imagen:  "img/lentes5.jpg", stock:1, categoria:"lentes"},
+    {id: 7, nombre:"Bogota", precio:2000, color: "marron", imagen: "img/lentes6.jpg", stock:1, categoria:"lentes"},
+    {id: 8, nombre:"Lisboa", precio:2250, color: "celeste", imagen: "img/lentes7.jpg", stock:1, categoria:"lentes"},
+    {id: 9, nombre:"Londres", precio:2500, color: "marron", imagen: "img/lentes8.jpg", stock:1, categoria:"lentes"},
+    {id: 10, nombre:"Estocolmo", precio: 3500, color:"marron", imagen: "img/lentes9.jpg", stock:1, categoria:"lentes"},
+    {id: 11, nombre:"Paris", precio: 3250 , color: "verde", imagen: "img/lentes10.jpg", stock:1, categoria:"lentes"},
+    {id: 12, nombre:"Bangkok", precio: 3000, color: "verde", imagen: "img/lentes.jpg", stock:1, categoria:"lentes"},
+
+    {id: 13, nombre:"Nápoles", precio: 4000 , color: "marron", imagen: "img/11.jpg", stock:1, categoria:"carteras"},
+    {id: 14, nombre:"Verona", precio: 4250, color: "negro", imagen: "img/1.jpg", stock:1, categoria:"carteras"},
+    {id: 15, nombre:"Venecia", precio: 4500, color: "marron", imagen: "img/2.jpg", stock:1, categoria:"carteras"},
+    {id: 16, nombre:"Milan", precio:3000, color:"negro", imagen: "img/3.jpg", stock:1, categoria:"carteras"},
+    {id: 17, nombre:"Pisa", precio:3250, color:"marron", imagen: "img/4.jpg", stock:1, categoria:"carteras"},
+    {id: 18, nombre:"Palermo", precio:3500, color:"blanco", imagen:  "img/5.jpg", stock:1, categoria:"carteras"},
+    {id: 19, nombre:"Siena", precio:2000, color: "marron", imagen: "img/6.jpg", stock:1, categoria:"carteras"},
+    {id: 20, nombre:"Lucca", precio:2250, color: "celeste", imagen: "img/7.jpg", stock:1, categoria:"carteras"},
+    {id: 21, nombre:"Amalfi", precio:2500, color: "marron", imagen: "img/8.jpg", stock:1, categoria:"carteras"},
+    {id: 22, nombre:"Positano", precio: 3500, color:"marron", imagen: "img/9.jpg", stock:1, categoria:"carteras"},
+    {id: 23, nombre:"Portofino", precio: 3250 , color: "verde", imagen: "img/10.jpg", stock:1, categoria:"carteras"},
+    {id: 24, nombre:"Sorrento", precio: 3000, color: "verde", imagen: "img/12.jpg", stock:1, categoria:"carteras"},
+];
+

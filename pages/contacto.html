@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Contacto</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"> 
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        
+</head>
+<body>
+    <header>
+        <div class="container-fluid envio text-center">
+            <p> 
+                <i class="bi bi-truck"></i>
+                Envio gratis a partir de los $8000
+            </p>
+        </div>
+
+
+        <nav class="navbar bg-light bg-transparent">
+            <div class="container-fluid">
+                <button id="button-line" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" id="button-x" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item "> <a class="nav-link hover-item" aria-current="page" href="../index.html">Inicio</a> </li>
+
+                            <li class="nav-item dropdown"> 
+                                <a class="nav-link dropdown-toggle hover-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
+                                <ul class="dropdown-menu border border-0">
+                                    <li><a class="dropdown-item hover hover-item" href="../lentes.html">Lentes</a></li>
+                                    <li><a class="dropdown-item hover hover-item disabled" href="pages/carteras.html">Carteras</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item "><a class="nav-link hover-item" href="pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h1> VENECIA <a class="navbar-brand" href="index.html"></a> </h1>
+
+                
+                <div class="btn-carrito">
+                    <button id="boton-carrito" class="boton-carrito">
+                        <i class="bi bi-cart2"></i>
+                    </button>
+                    <div id="contador-Carrito" class="conteo-carrito">0</div>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="m-5">
+                <p class="text-center fw-light lh-base fs-5 style-parrafos">Estamos dispuestos a resolver sus dudas y atender sus sugerencias.</p>
+                <p class="text-center fw-light lh-base fs-5 style-parrafos">Contacte con nosotros a través de nuestro formulario o nuestras redes sociales.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <h2 class="text-center fw-light lh-base fs-1 style-parrafos">Formulario</h2>
+                    <form class="form row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="text-center fw-light lh-base fs-5 style-parrafos form-label">Nombre</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="text-center fw-light lh-base fs-5 style-parrafos form-label">Apellido</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="text-center fw-light lh-base fs-5 style-parrafos form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-outline mb-4">
+                            <label class="text-center fw-light lh-base fs-5 style-parrafos form-label" for="form4Example3">Mensaje</label>                            
+                            <textarea class=" form-control" id="form4Example3" rows="4" placeholder="Escribe aquí tu mensaje"></textarea>
+                        </div>
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2 bg-danger bg-opacity-10 border-white" type="checkbox" value="" id="form4Example4" checked />
+                            <label class="form-check-label" for="form4Example4"> Enviarme una copia del mensaje por email</label>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+
+                                <button type="button" class="button btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#myModal"> Enviar Formulario</button>
+
+                            </div>
+
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">¿Esta seguro que quiere enviar este formulario?</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Enviar</button>
+                                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <h2 class="text-center fw-light lh-base fs-1 style-parrafos">Encontranos en...</h2>
+                            <p class="text-center fw-light lh-base fs-5 style-parrafos"> <i class="bi bi-geo-alt"></i> Independecia 123, Laboulaye</p>
+                        <div class="card m-3" >
+                            <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.8144082272224!2d-63.39135058516585!3d-34.1255007398579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cf652c8ac5b67d%3A0xb5df52f051c166af!2sAv.%20Independencia%20123%2C%20Laboulaye%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1658446163033!5m2!1ses-419!2sar" width="500" height="350" style="-radius: 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <hr>
+    <footer>
+        <div class="container mt-5">
+            <div class="d-flex justify-content-center">
+                <div class="col-4">
+                    <h4 class="text-start">NAVEGACIÓN</h4>
+                    <ul id="navegacion" class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="../pages/lentes.html">Lentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="../pages/carteras.html">Carteras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="../pages/contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-4 align-self-center">
+                    <h4 class="text-center">MEDIOS DE PAGO</h4>
+                    <div class="row justify-content-center">
+                        <img src="../img/iconos/card.png" alt="" class="cards mb-4">
+                    </div>
+                    <h4 class="text-center">MEDIOS DE ENVIO</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <img src="../img/iconos/oca.png" alt="" width="40px">
+                        </div>
+                        <div class="col-2">
+                            <img src="../img/iconos/correo.jpg" alt="" width="40px" >
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="col-4">
+                    <h4 class="text-end">CONTACTO</h4>
+                    <p class="text-end"> <i class="bi bi-whatsapp"></i> +54 35112345 </p>
+                    <p class="text-end"> <i class="bi bi-envelope"></i> tuemail@email.com</p>
+                    <p class="text-end"> <i class="bi bi-geo-alt"></i> Independecia 123, Laboulaye</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid banner envio mt-5">
+            <div class="row">
+                <div class="col">
+                    <i class="icon bi bi-instagram"></i>
+                </div>
+                <div class="col">
+                    <i class="icon bi bi-facebook"></i>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
