@@ -16,15 +16,11 @@ body {
     background: transparent;
 }
 
-#button-x{
-    outline: none;
-    box-shadow: none;
-}
-
-#button-line{
-    outline: none;
-    box-shadow: none;
-    border: 1.5px solid #9f4a0066;
+.button-line{
+    border-color: #000000;
+    color: #000000;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .offcanvas{
@@ -55,6 +51,11 @@ body {
     margin-right: 15px;
 }
 
+.boton-carrito:hover{
+    cursor: pointer;
+    color: #9f4a00;
+}
+
 .conteo-carrito {
     font-size: 14px;
     background-color: #9f4a00;
@@ -69,30 +70,16 @@ body {
     text-align: center;
 }
 
-.boton-carrito:hover {
-    cursor: pointer;
-    color: #9f4a00;
-}
-.boton-carrito:focus {
-    outline: none;
-}
-
 .envio {
-    background-color: black;
-    color: #edeef6;
-    width: 100%;
     height: 24px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     font-size: 12px;
 }
-/* FIN NAVBAR */
+
 
 /* HEADER */
 .header{
     width: 100%;
-    background-image: url("../img/headcopia.jpg");
+    background-image: url("../img/headcopia10_auto_x2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,16 +90,11 @@ h1 {
     color: #9f4a00;
     font-size: 50px;
 }
-/* FIN HEADER */
+
 
 /* SECTION INDEX */
-
 .iconos{
     font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .section {
@@ -420,20 +402,14 @@ footer a:hover {
     border-radius: 10px;
     box-shadow: none;
 }
-
-.button-filtro {
-    display: block;
-    margin-bottom: 5px;
-    background-color: white;
-    border: none;
-    width: 70px;
+.btn-circle{
+    width: 30px;
     height: 30px;
-    font-size: 15px; 
-    color: rgb(199, 133, 46);   
-    cursor: pointer;
-    text-align: left;
-    text-decoration:underline
+    padding: 6px 0px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(0, 0, 0, 0.621);
 }
+
 
 .filtro{
     margin: 20px;
