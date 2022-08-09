@@ -1,10 +1,6 @@
-
-const contenedorProductos = document.getElementById('contenedor-productos')
-
 const contenedorCarrito = document.getElementById('carrito-contenedor')
 const botonVaciar = document.getElementById('vaciar-carrito')
 const contadorCarrito = document.getElementById('contador-Carrito')
-
 
 const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
@@ -13,20 +9,14 @@ const cantidadTotal = document.getElementById('cantidadTotal')
 
 let carrito = []
 
-document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('carrito')){
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        actualizarCarrito()
-    }
-})
+const productos = document.getElementById ('contenedor-productos')
 
-botonVaciar.addEventListener('click', () => {
-    carrito.length = 0
-    actualizarCarrito()
-})
+fetch("stock.json")
+    .then(res => res.json())
+    .then(data => {
 
-const actualizarGrid = () => {
-    catalogoLentes.forEach((item) => {
+    const actualizarGrid = () => {
+        data.forEach(item => {
         const div = document.createElement('div')
         div.innerHTML = `
         <div id=product-id${item.id} class="card card-border">
@@ -41,9 +31,8 @@ const actualizarGrid = () => {
             </div>
         </div> 
         `
-        contenedorProductos.appendChild(div)
+        productos.appendChild(div)
 
-        
         const boton = document.getElementById(`agregar${item.id}`)
 
         boton.addEventListener('click', () => {
@@ -59,29 +48,41 @@ const actualizarGrid = () => {
 
             agregarAlCarrito(item.id)
 
-        })
-    })
-}
-actualizarGrid();
-
-const agregarAlCarrito = (prodId) => {
-    const encontrar = carrito.some (prod => prod.id === prodId) 
-
-    if (encontrar){ 
-        const x = carrito.map (prod => { 
-           // console.log(x);
-            if (prod.id === prodId){
-                prod.stock++
-            }
-        })
-    } else {
-        const item = catalogoLentes.find((prod) => prod.id === prodId)
-        carrito.push(item)
+            })
+        });
     }
+    actualizarGrid();
 
+    const agregarAlCarrito = (prodId) => {
+        const encontrar = carrito.some (prod => prod.id === prodId) 
+    
+        if (encontrar){ 
+            const x = carrito.map (prod => { 
+               // console.log(x);
+                if (prod.id === prodId){
+                    prod.stock++
+                }
+            })
+        } else {
+            const item = data.find((prod) => prod.id === prodId)
+            carrito.push(item)
+        }
+    
+        actualizarCarrito()
+    }
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        actualizarCarrito()
+    }
+})
+
+botonVaciar.addEventListener('click', () => {
+    carrito.length = 0
     actualizarCarrito()
-}
-
+})
 
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)
@@ -114,12 +115,10 @@ const actualizarCarrito = () => {
 
     contadorCarrito.innerText = (carrito.length) 
 
-    console.log(carrito)
+    //console.log(carrito)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.stock * prod.precio, 0);
     //produTotal.innerText = carrito.reduce((acc, prod) => acc + prod.stock++, 0);
 
     contadorCarrito.innerText = produTotal.innerText = carrito.reduce((acc, prod) => acc + prod.stock, 0);
 
 }
-
-
