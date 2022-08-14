@@ -11,7 +11,7 @@ let carrito = []
 
 const productos = document.getElementById ('contenedor-productos')
 
-fetch("stock.json")
+fetch("http://127.0.0.1:5501/stock.json")
     .then(res => res.json())
     .then(data => {
 

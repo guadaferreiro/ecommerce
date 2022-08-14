@@ -9,7 +9,7 @@ const nuevoFiltro3 = [];
 const nuevoFiltro4 = [];
 
 function mostrarFiltro (){
-    fetch ('stock.json')
+    fetch ('http://127.0.0.1:5501/stock.json')
         .then(res => res.json())
         .then (data => {
             const filtrarProductos1 = data.filter(item => item.color === "negro");
