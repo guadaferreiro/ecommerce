@@ -82,9 +82,9 @@ fetch("http://127.0.0.1:5501/stock.json")
             div.className = ('productoEnCarrito')
             div.innerHTML = `
             <img class="img-modal" src=${producto.imagen}> </img>
-            <p>${producto.nombre}</p>
+            <p class="none">${producto.nombre}</p>
             <p>Precio: $ ${producto.precio}</p>
-            <p>Cantidad: <span id="cantidad"> ${producto.stock} </span></p>
+            <p class="none">Cantidad: <span id="cantidad" > ${producto.stock} </span></p>
             <button onclick="eliminarDelCarrito(${producto.id})" class="boton-eliminar"><i class="bi bi-trash3"></i></button>
             `
             contenedorCarrito.appendChild(div)
