@@ -112,10 +112,19 @@ h2{
     font-weight: bold;
 }
 
+.fav-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1250px;
+    justify-items: center;
+    
+}
+
 .fav img {
     width: 300px;
     height: 300px;
     margin-bottom: 80px;
+    align-items: center;
 }
 /* FIN SECTION INDEX */
 
@@ -130,7 +139,7 @@ h2{
 
 /*FORMULARIO-CONTACTO*/
 .button {
-    background-color: rgba(250, 155, 218, 0);
+    background-color: transparent;
     color: #9f4a00;
     font-size: 16px;
     border-color: #9f4a00;
@@ -138,9 +147,15 @@ h2{
     border-width: 1.5px;
 }
 
+.button:hover {
+    color:#ffffff;
+    background-color:#9f4a00;
+    border-color: #9f4a00;
+}
+
 .button:focus:not(:focus-visible) {
-    background-color: #fcf1df;
-    color: #9f4a00b4;
+    color:#9f4a00;
+    background-color:transparent;
     box-shadow:0 1px 1px rgba(255, 241, 232, 0.5)inset, 0 0 8px rgba(255, 239, 227, 0.6);
     outline: 0 none;
 }
@@ -203,7 +218,7 @@ footer a:hover {
 /* FIN FOOTER*/
 
 /* CONTENEDOR CARTAS JS*/
-#contenedor-productos{
+.contenedor-productos{
     margin-top:  40px;
     margin-bottom: 100px;
     display: grid;
@@ -226,12 +241,6 @@ footer a:hover {
     border-color:rgba(212, 139, 108, 0.478);;
 }
 
-.producto-card{
-    display: grid;
-    grid-template-columns: repeat(4, 275px);
-    gap: 30px;
-    justify-content: center;
-}
 
 .card {
     border: 1.5px solid #1e212315 ;
@@ -277,23 +286,22 @@ footer a:hover {
 /* MODAL - CARRITO  */
 .boton-vaciar {
     border: none;
-    color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     border-radius: 5px;
     
     font-size: 16px;
-    margin: 4px 2px;
+
     transition-duration: 0.4s;
     cursor: pointer;
 
-    background-color: white;
-    color: black;
-    border: 2px solid rgb(212, 139, 108);
+    background-color:rgb(112, 112, 112);
+    color: #fff;
+
 }
 .boton-vaciar:hover {
-    background-color: rgb(212, 139, 108);
-    color: white;
+    background-color: rgb(171, 171, 171);
+    color: #000;
 }
 
 .img-modal {
@@ -402,13 +410,6 @@ footer a:hover {
     border-radius: 10px;
     box-shadow: none;
 }
-.btn-circle{
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
-    border: 1.5px solid rgba(0, 0, 0, 0.621);
-}
 
 
 .filtro{
@@ -428,4 +429,68 @@ footer a:hover {
     text-align:end;
     font-size: 15px;
     color: #c70000;
+}
+.btn-modal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-outline-dark {
+    border-width: 1.5px !important;
+}
+
+.formCompra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.exclamation {
+    color: #ffd000;
+    font-size: 50px;
+}
+
+
+
+@media (max-width: 915px)  {
+    .header{
+        height: 300px;
+    }
+
+    .iconos {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .fav-container{
+        width: 400px;
+    }
+
+    .fav img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .p-form {
+        font-size: 16px !important;
+    }
+
+    .card-img{
+        width: 275px;
+        height: 275px;
+        border-radius: 10px;
+    }
+
+    .contenedor-productos{
+        grid-template-columns: repeat(1, 275px);
+    }
 }

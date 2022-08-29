@@ -4,6 +4,25 @@ let form = document.getElementById('form');
 let enviado = document.getElementById ('enviando');
 let alertError = document.getElementById ('error')
 
+let enviadoSusc = document.getElementById ('enviadoSusc')
+let susc = document.getElementById ('btnSusc').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const emailSusc = document.getElementById ('susc');
+
+    if (emailSusc.value === "")  {
+        alertError.innerHTML = `<p class="msjError">*Ingrese un email válido</p>`;
+        document.getElementById ('susc').focus();
+    } else {
+        enviadoSusc.innerHTML= `<p class="enviado">¡Te suscribiste al shop!</p>`;
+
+        localStorage.setItem('email', emailSusc.value);
+        
+        document.getElementById ('susc').value="";
+        document.getElementById ('susc').focus();
+    }
+});
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 });
@@ -19,14 +38,16 @@ btnBorrar.addEventListener('click', (e) => {
     mensaje.value = "";
 });
 
-
 btnEnviar.addEventListener('click', (e) => {
     const nombre = document.getElementById('form-nombre');
     const correo = document.getElementById('form-correo');
     const mensaje = document.getElementById('form-mensaje');
 
     if (nombre.value === "" || correo.value === "" || mensaje.value === "") {
-        alert ("Debes completar todos los datos");
+        Swal.fire({
+            html:'<i class="exclamation bi bi-exclamation-triangle"></i> <p>Debes completar todos los datos</p>',
+            confirmButtonColor: '#343a40',
+        });
     } 
     
     if ((nombre.value.length) < 3 || (nombre.value === "")) {
@@ -53,27 +74,3 @@ btnEnviar.addEventListener('click', (e) => {
     };
 
 });
-
-let enviadoSusc = document.getElementById ('enviadoSusc')
-
-let susc = document.getElementById ('btnSusc').addEventListener('click', (e) => {
-    e.preventDefault();
-
-    const emailSusc = document.getElementById ('susc');
-
-    if (emailSusc.value === "")  {
-        alertError.innerHTML = `<p class="msjError">*Ingrese un email válido</p>`;
-        document.getElementById ('susc').focus();
-    } else {
-        enviadoSusc.innerHTML= `<p class="enviado">¡Te suscribiste al shop!</p>`;
-
-        localStorage.setItem('email', emailSusc.value);
-        
-        document.getElementById ('susc').value="";
-        document.getElementById ('susc').focus();
-    }
-});
-
-
-
-

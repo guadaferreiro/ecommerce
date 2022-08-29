@@ -1,17 +1,12 @@
-const contenedorCarrito = document.getElementById('carrito-contenedor')
-const botonVaciar = document.getElementById('vaciar-carrito').addEventListener('click', () => {
-        carrito.length = 0
-        actualizarCarrito()
-        })
+const contenedorCarrito = document.getElementById('carrito-contenedor');
 const contadorCarrito = document.getElementById('contador-Carrito')
 
-const cantidad = document.getElementById('cantidad')
-const precioTotal = document.getElementById('precioTotal')
-const produTotal = document.getElementById('productosTotal')
-const cantidadTotal = document.getElementById('cantidadTotal')
+const cantidad = document.getElementById('cantidad');
+const precioTotal = document.getElementById('precioTotal');
+const produTotal = document.getElementById('productosTotal');
+const cantidadTotal = document.getElementById('cantidadTotal');
 
-const productos = document.getElementById ('contenedor-productos')
-
+const productos = document.getElementById ('contenedor-productos');
 
 let carrito;
 
@@ -86,7 +81,7 @@ fetch("http://127.0.0.1:5501/stock.json")
             const div = document.createElement('div')
             div.className = ('productoEnCarrito')
             div.innerHTML = `
-            <img class="img-modal" src=${producto.imagen}>  </img>
+            <img class="img-modal" src=${producto.imagen}> </img>
             <p>${producto.nombre}</p>
             <p>Precio: $ ${producto.precio}</p>
             <p>Cantidad: <span id="cantidad"> ${producto.stock} </span></p>
@@ -128,4 +123,3 @@ document.addEventListener('DOMContentLoaded', () => {
     actualizarCarrito();
     }
 })
-
