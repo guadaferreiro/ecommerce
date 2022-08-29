@@ -189,6 +189,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
 }
 
 .banner i {
@@ -388,6 +389,22 @@ hr{
     margin-left: 460px;
 }
 
+
+
+/* CONTENEDOR*/
+
+.img-contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contenido img{
+    width: 300px;
+    height: 300px;
+}
+
+
 /* TOASTIFY */
 .toastify{
     font-size: 18px;
@@ -440,19 +457,91 @@ hr{
     font-size: 50px;
 }
 
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+    h1 {
+        font-size: 40px;
+    }
 
-@media (max-width: 1194px)  {
+    h2{
+        font-size: 30px;
+    }
+
+    .contenido img { 
+        width: 100px;
+        height: 100px;
+    }
+
+    .p-form {
+        font-size: 9px;
+    }
+
     .header{
         height: 300px;
     }
 
-    .fav-container{
-        width: 900px;
+    .contenedor-productos{
+        grid-template-columns: repeat(1, 275px) !important;
     }
 
-    .fav img {
-        width: 250px;
-        height: 250px;
+    .productoEnCarrito {
+        grid-template-columns: repeat(3, 100px) !important;
+    }
+
+    .modal-carrito {
+        width: 40px;
+        font-size: 14px;
+    }
+
+    .boton-eliminar {
+        font-size: 13px;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 621px)  {
+    .header{
+        height: 300px;
+    }
+
+    .contenido img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-img{
+        width: 275px;
+        height: 275px;
+        border-radius: 10px;
+    }
+
+    .contenedor-productos{
+        grid-template-columns: repeat(2, 275px) !important;
+    }
+
+    .productoEnCarrito {
+        grid-template-columns: repeat(3, 150px) !important;
+    }
+
+    .modal-carrito {
+        width: 50px;
+        font-size: 16px;
+    }
+
+    .boton-eliminar {
+        font-size: 13px;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+@media (max-width: 1194px)  {
+    .header{
+        height: 300px;
     }
 
     .card-img{
@@ -483,98 +572,5 @@ hr{
     }
 }
 
-@media (max-width: 890px)  {
-    .header{
-        height: 300px;
-    }
 
-    .fav-container{
-        width: 900px;
-    }
 
-    .fav img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .card-img{
-        width: 275px;
-        height: 275px;
-        border-radius: 10px;
-    }
-
-    .contenedor-productos{
-        grid-template-columns: repeat(2, 275px);
-    }
-
-    .productoEnCarrito {
-        grid-template-columns: repeat(3, 150px);
-    }
-
-    .modal-carrito {
-        width: 50px;
-        font-size: 16px;
-    }
-
-    .boton-eliminar {
-        font-size: 13px;
-    }
-
-    .none {
-        display: none;
-    }
-}
-
-@media (max-width: 480px)  {
-    h1 {
-        font-size: 40px;
-    }
-
-    h2{
-        font-size: 30px;
-    }
-
-    .p-form {
-        font-size: 9px;
-    }
-
-    .header{
-        height: 300px;
-    }
-
-    .fav-container{
-        width: 590px;
-    }
-
-    .fav img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .card-img{
-        width: 275px;
-        height: 275px;
-        border-radius: 10px;
-    }
-
-    .contenedor-productos{
-        grid-template-columns: repeat(1, 275px);
-    }
-
-    .productoEnCarrito {
-        grid-template-columns: repeat(3, 100px);
-    }
-
-    .modal-carrito {
-        width: 40px;
-        font-size: 14px;
-    }
-
-    .boton-eliminar {
-        font-size: 13px;
-    }
-
-    .none {
-        display: none;
-    }
-}

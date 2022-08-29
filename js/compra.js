@@ -1,5 +1,8 @@
 let btnCompra = document.getElementById ('btn-comprar');
 
+const precioTotal = document.getElementById('precioTotal');
+const produTotal = document.getElementById('productosTotal');
+
 function venta (){
     location.href = "../pages/compra.html"
 }

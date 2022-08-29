@@ -2,8 +2,7 @@ const contenedorCarrito = document.getElementById('carrito-contenedor');
 const contadorCarrito = document.getElementById('contador-Carrito')
 
 const cantidad = document.getElementById('cantidad');
-const precioTotal = document.getElementById('precioTotal');
-const produTotal = document.getElementById('productosTotal');
+
 const cantidadTotal = document.getElementById('cantidadTotal');
 
 const productos = document.getElementById ('contenedor-productos');
